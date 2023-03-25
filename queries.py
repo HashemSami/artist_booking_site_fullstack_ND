@@ -19,13 +19,14 @@ print(Genre.query.all())
 
 # db.session.add_all([CA, NY])
 
-# db.drop_all()
 db.session.query(genres_venues).delete()
 db.session.query(genres_artists).delete()
 Show.query.delete()
 Venue.query.delete()
 Artist.query.delete()
 Genre.query.delete()
+# db.session.remove()
+# db.drop_all()
 
 db.session.commit()
 db.session.close()

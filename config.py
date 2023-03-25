@@ -9,5 +9,5 @@ DEBUG = True
 
 # Connect to the database
 SQLALCHEMY_DATABASE_URI = (
-    "postgresql://your_username:your_password@localhost:5432/DB_name"
+    "postgresql://postgres:hash1234@localhost:5432/fyyurapp"
 )
